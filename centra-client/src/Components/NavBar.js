@@ -22,7 +22,7 @@ class NavBar extends Component {
           <i class="material-icons">menu</i>
         </a>
           <div
-            class="nav-wrapper blue darken-4"
+            class="nav-wrapper blue darken-2"
             style={{ paddingBottom: "20px" }}
           >
             <a href="/" class="brand-logo">
@@ -35,26 +35,12 @@ class NavBar extends Component {
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
-                <a href="/products">Our Products</a>
+                <a href="" disabled>Our Products</a>
               </li>
               <li>
                 <a href={catalouge}>Download Catalouge</a>
               </li>
             </ul>
-            {/*
-          <ul id="dropdown1" class="dropdown-content">
-            <li>
-              <a href="#">one</a>
-            </li>
-            <li>
-              <a href="#">two</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="#">three</a>
-            </li>
-          </ul>
-          */}
           </div>
         </nav>
 
