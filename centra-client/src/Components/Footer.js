@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import M from "materialize-css"
 import iso9001 from "../media/iso9001.jpg"
 import iso3684 from "../media/iso3684.png"
+import iso13485 from "../media/ISO-13485.jpg"
+import ce2 from "../media/CE 0123-1.jpg"
 import ce from "../media/ce.png"
+import ceProof from '../media/Q6.pdf'
+import isoProof from '../media/G2S.pdf'
 class Footer extends Component {
   componentDidMount(){
     document.addEventListener('DOMContentLoaded', function() {
@@ -32,7 +36,7 @@ class Footer extends Component {
                   <i class="material-icons">local_printshop</i> +20 (2) 38210475
                 </p></li>
                 <li><p>
-                  <i class="material-icons">email</i> zakishalabi@centra-egypt.com
+                  <i class="material-icons">email</i> info@centra-egypt.com
                 </p></li>
                 </ul>
               </p>
@@ -50,9 +54,8 @@ class Footer extends Component {
             <div class="col l4">
               <h5 class="white-text" style={{textAlign:"left"}}>Certfications</h5>
               <div style={{textAlign:"left"}}>
-              <img src={ce} class="certficates tooltipped" data-tooltip="CE 0120"></img>
-              <img src={iso9001} class="certficates tooltipped" data-tooltip="ISO 9001"></img>
-              <img src={iso3684} class="certficates tooltipped" data-tooltip="ISO 13845"></img>
+              <a href={ceProof}><img src={ce2} class="certficates tooltipped" data-tooltip="CE 0123" style={{borderRadius:"50%"}}></img></a>
+              <a href={isoProof}><img src={iso13485} class="certficates tooltipped" data-tooltip="ISO 13485" style={{borderRadius:"50%"}}></img></a>
               </div>
             </div>
           </div>

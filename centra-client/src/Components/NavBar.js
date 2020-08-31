@@ -35,7 +35,7 @@ class NavBar extends Component {
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
-                <a href="" disabled>Our Products</a>
+                <a disabled>Our Products</a>
               </li>
               <li>
                 <a href={catalouge}>Download Catalouge</a>
