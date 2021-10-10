@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import logo from "../media/logo.png";
-import catalouge from "../media/cata.pdf";
+import catalouge from "../media/cata2021.pdf";
 import wallpaper from '../media/centra-2.jpg'
 class NavBar extends Component {
   componentDidMount() {
