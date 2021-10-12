@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
-import "../CSS/imageBox.css";
-import Carousel from './Carousel'
+import Carousel from "./Carousel";
+import Contact from "./Email";
 import image1 from "../media/Picture2.png";
 import image4 from "../media/Picture6.png";
 import image5 from "../media/Picture1.png";
@@ -9,6 +9,7 @@ import image6 from "../media/Picture12.png";
 import background from "../media/15.jpg";
 
 import newImage from "../media/21.jpg";
+
 
 class Parallax extends Component {
   state = { width: -1, height: -1, slideIndex: 1, slides: [], dots: [] };
@@ -30,7 +31,7 @@ class Parallax extends Component {
       var elems = document.querySelectorAll(".parallax");
     });
     var result = this.getWindowDimension();
-    
+
     this.setState({ width: result.width, height: result.height });
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -38,8 +39,8 @@ class Parallax extends Component {
       var instances = M.Collapsible.init(elems, true);
       var instance_ = M.Carousel.init({
         fullWidth: true,
-        indicators: true
-      })
+        indicators: true,
+      });
     });
 
     console.log(this.state.slideIndex);
@@ -57,7 +58,6 @@ class Parallax extends Component {
             backgroundOrigin: "border-box",
           }}
         >
-          
           <div className="container">
             <div className="row">
               <div className="col s6">
@@ -96,9 +96,12 @@ class Parallax extends Component {
             </div>
             <div className="row">
               <div className="col s12">
-                <Carousel/>
+                <Carousel />
               </div>
-              <br></br>
+
+              <div className="row">
+                <Contact />
+              </div>
             </div>
           </div>
         </div>
