@@ -4,7 +4,7 @@ const path = require("path");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const joi = require("joi");
-const credits = require("./email");
+const moment = require("moment")
 
 app.use(express.json());
 app.use(cors());
@@ -47,9 +47,9 @@ app.post("/mail", (req, res) => {
 
   var mailOptions = {
     from: "centra.frontend@gmail.com",
-    to: data.mail,
-    subject: "Welcome To Nodemailer",
-    text: data.text,
+    to: "centra.frontend@gmail.com",
+    subject: `Message From ${data.mail}`,
+    text:`Inquiry from ${data.fullname}, which mentions: ${data.text}, this message was created on ${moment().format('MMMM Do YYYY, h:mm:ss a')}`,
   };
 
   console.log(mailOptions);
