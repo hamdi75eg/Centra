@@ -24,7 +24,7 @@ class Footer extends Component {
       <footer class="page-footer blue darken-4">
         <div class="container">
           <div class="row">
-            <div class="col l4">
+            <div class="col s12 m3 l12 xl12">
               <h5 class="white-text" style={{ textAlign: "left" }}>
                 About:
               </h5>
@@ -56,7 +56,7 @@ class Footer extends Component {
                 </ul>
               </p>
             </div>
-            <div class="col l4">
+            <div class="col s12 m3 l12 xl12">
               <h5 class="white-text" style={{ textAlign: "left" }}>
                 Office Address:
               </h5>
@@ -67,7 +67,7 @@ class Footer extends Component {
                 <li>Egypt</li>
               </ul>
             </div>
-            <div class="col l4">
+            <div class="col s12 m3 l12 xl12">
               <h5 class="white-text" style={{ textAlign: "left" }}>
                 Certfications
               </h5>

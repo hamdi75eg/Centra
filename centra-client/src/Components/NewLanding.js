@@ -60,7 +60,7 @@ class Parallax extends Component {
         >
           <div className="container">
             <div className="row">
-              <div className="col s6">
+              <div className="col s12 m6 l6 xl6">
                 <div>
                   <h6
                     style={{ padding: "0px", color: "Blue", textAlign: "left" }}
@@ -84,7 +84,7 @@ class Parallax extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col s6">
+              <div className="col s12 m6 l6 xl6">
                 <p className="Img_Home gradient-border">
                   <img
                     style={{ display: "inline-flex" }}
@@ -95,7 +95,7 @@ class Parallax extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col s12">
+              <div className="col s12 m12 l12 xl12">
                 <Carousel />
               </div>
 
