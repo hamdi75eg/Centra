@@ -33,18 +33,20 @@ class About extends Component {
     });
 
     const valid = schema.validate(data);
+    var css_error = 'style="color:#e53935;"';
+    var css_valid = 'style="color:#43a047;"';
 
     if (valid.error) {
-      var toastHTML = "<span>Please Enter The Right Info</span>";
-      const cause = valid.error.details[0].path[0]
+      var toastHTML = `<span ${css_error}>Please Enter The Right Info</span>`;
+      const cause = valid.error.details[0].path[0];
       if (cause === "mail") {
-        toastHTML = "Please Enter a Valid Email";
+        toastHTML = `<span ${css_error}>Please Enter a Valid Email</span>`;
       }
-      if(cause === "fullname"){
-        toastHTML = "Please Enter a Your Fullname";
+      if (cause === "fullname") {
+        toastHTML = `<span ${css_error}>Please Enter a Your Fullname</span>`;
       }
-      if(cause === "text"){
-        toastHTML = "Please Enter a Your Message";
+      if (cause === "text") {
+        toastHTML = `<span ${css_error}>Please Enter a Your Message</span>`;
       }
       console.log(valid.error.details[0].path[0]);
       M.toast({ html: toastHTML });
@@ -66,15 +68,15 @@ class About extends Component {
         if (data.error === undefined) {
           //All is good
           this.setState({ fullname: "", mail: "", text: "" });
-          var toastHTML = "<span>We will be in touch soon</span>";
+          var toastHTML = `<span ${css_valid}>We Will be in touch soon</span>`;
           M.toast({ html: toastHTML });
         } else {
-          var toastHTML = "<span>Error While Sending Email</span>";
+          var toastHTML = `<span ${css_error}>Error While Sending Email</span>`;
           M.toast({ html: toastHTML });
         }
       })
       .catch((err) => {
-        var toastHTML = "<span>Something went wrong</span>";
+        var toastHTML = `<span ${css_error}>Something Went Wrong</span>`;
         M.toast({ html: toastHTML });
       });
   };
@@ -128,7 +130,7 @@ class About extends Component {
               </div>
             </div>
             <div className="row">
-              <a class="btn-large teal darken-3" onClick={this.submit}>
+              <a class="btn-large cyan darken-2" onClick={this.submit}>
                 <i class="material-icons right">send</i>Send
               </a>
             </div>

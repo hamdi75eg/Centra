@@ -22,7 +22,7 @@ class NavBar extends Component {
           <i class="material-icons">menu</i>
         </a>
           <div
-            class="nav-wrapper blue darken-2"
+            class="nav-wrapper indigo darken-4"
             style={{ paddingBottom: "20px" }}
           >
             <a href="/" class="brand-logo">

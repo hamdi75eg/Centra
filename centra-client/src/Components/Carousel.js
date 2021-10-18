@@ -57,7 +57,7 @@ class Homepage extends Component {
     return (
       <div class="carousel carousel-slider center" data-indicators="true">
         <div
-          class="carousel-item red white-text"
+          class="carousel-item white white-text"
           href="#one!"
           style={{
             backgroundImage: `url(${this.state.imageURL[0]})`,
@@ -71,7 +71,7 @@ class Homepage extends Component {
         </div>
 
         <div
-          class="carousel-item amber white-text"
+          class="carousel-item white white-text"
           href="#two!"
           style={{
             backgroundImage: `url(${this.state.imageURL[1]})`,
@@ -84,7 +84,7 @@ class Homepage extends Component {
         </div>
 
         <div
-          class="carousel-item green white-text"
+          class="carousel-item white white-text"
           href="#three!"
           style={{
             backgroundImage: `url(${this.state.imageURL[2]})`,

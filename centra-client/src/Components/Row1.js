@@ -13,14 +13,10 @@ class Homepage extends Component {
         <div className="row">
           <div className="col s12 m6 l6 xl6">
             <div>
-              <h6 style={{ padding: "0px", color: "Blue", textAlign: "left" }}>
-                {" "}
-                Centra For Medical Supplies
-              </h6>
               <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "left" }}>
-                Centra
+                About Us
               </h2>
-              <p style={{ textAlign: "left" }}>
+              <p class="flow-text" style={{ textAlign: "left" }}>
                 Established in 2003, Centra is an independent, privately owned
                 company, specialized in manufacturing and supplying disposable
                 medical wearing apparel. Our production facility is equipped

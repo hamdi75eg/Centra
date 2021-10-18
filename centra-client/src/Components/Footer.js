@@ -21,7 +21,7 @@ class Footer extends Component {
     const isoProof =
       "https://drive.google.com/file/d/14f1-tIBVwNUMbv7u3qd4px3pIioO9r27/view?usp=sharing";
     return (
-      <footer class="page-footer blue darken-4">
+      <footer class="page-footer indigo darken-4">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l4 xl4">
@@ -94,9 +94,9 @@ class Footer extends Component {
         </div>
         <div class="footer-copyright">
           <div class="container">
-            © 2020 Centra For Medical Supplies
+            © 2021 Centra For Medical Supplies
             <a class="grey-text text-lighten-4 right" href="#">
-              Site Map
+              Top of Page
             </a>
           </div>
         </div>

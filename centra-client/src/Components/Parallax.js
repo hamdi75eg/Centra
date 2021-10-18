@@ -34,7 +34,7 @@ class Parallax extends Component {
         <div>
           <div class="parallax-container" style={{}} >
             <div class="parallax">
-              <img src={image1} style={{ height: "100%", width: "100%" }} />
+              <img src={"http://lorempixel.com/1690/1127/sports/1/Dummy-Text/"} />
             </div>
           </div>
           <div class="section blue darken-4">

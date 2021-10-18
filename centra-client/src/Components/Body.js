@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
-import Parallax from './Parallax'
+import Parallax from './NewLanding copy'
 import About from './About'
 import newLanding from './NewLanding'
 import Email from './Email'

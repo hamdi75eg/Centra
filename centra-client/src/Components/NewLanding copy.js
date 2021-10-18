@@ -29,7 +29,8 @@ class Parallax extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".parallax");
-    });
+      var instances = M.Parallax.init(elems, true);
+    }); 
     var result = this.getWindowDimension();
 
     this.setState({ width: result.width, height: result.height });
@@ -47,27 +48,41 @@ class Parallax extends Component {
   }
 
   render() {
+    //Desktop Version
     return (
-      <div
-        style={{
-          backgroundImage: `url(${"background"})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-          backgroundOrigin: "border-box",
-        }}
-      >
-        <div className="container">
-          <div className="row">
+      <div className="">
+        <div class="parallax-container">
+          <div class="parallax">
+            <img src={"https://drive.google.com/uc?export=view&id=1OZ6ji9wWZE30Wth-eCdB6BRxkNFEKZvr"} />
+          </div>
+        </div>
+        <div class="section white">
+          <div class="row container">
             <Row1 />
           </div>
-          <div className="row">
-            <div className="col s12 m12 l12 xl12">
-              <Carousel />
-            </div>
-
+        </div>
+        <div class="parallax-container">
+          <div class="parallax">
+            <img src={"http://lorempixel.com/1690/1130/technics/2/"} />
+          </div>
+        </div>
+        <div class="section white">
+          <div class="row container">
             <div className="row">
-              <Contact />
+              <h2>Our Prodcuts</h2>
             </div>
+            <Carousel />
+          </div>
+        </div>
+
+        <div class="parallax-container">
+          <div class="parallax">
+            <img src={"http://lorempixel.com/1690/1130/technics/3/"} />
+          </div>
+        </div>
+        <div class="section white">
+          <div class="row container">
+            <Contact />
           </div>
         </div>
       </div>
