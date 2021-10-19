@@ -11,7 +11,7 @@ class Homepage extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col s12 m6 l6 xl6">
+          <div className="col s12 m12 l6 xl6">
             <div>
               <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "left" }}>
                 About Us
@@ -29,12 +29,13 @@ class Homepage extends Component {
               </p>
             </div>
           </div>
-          <div className="col s12 m6 l6 xl6">
+          <div className="col s12 m12 l6 xl6">
             <p className="Img_Home gradient-border">
               <img
                 style={{ display: "inline-flex" }}
                 src={newImage}
-                width="100%"
+                max width="100%"
+                height="auto"
               ></img>
             </p>
           </div>

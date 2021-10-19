@@ -26,26 +26,26 @@ class Footer extends Component {
           <div class="row">
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-                About:
+                Contact Us:
               </h5>
               <p class="grey-text text-lighten-4">
                 <ul style={{ textAlign: "left" }}>
                   <li>
                     <p>
                       <i class="material-icons">phone_iphone</i> +20 (111)
-                      4888898
+                      2911174
                     </p>
                   </li>
                   <li>
                     <p>
-                      <i class="material-icons">phone</i> +20 (2) 27429697 /
-                      27429698
+                      <i class="material-icons">phone</i> +20 (2) 38330869 /
+                      +20 (2) 38330856
                     </p>
                   </li>
                   <li>
                     <p>
                       <i class="material-icons">local_printshop</i> +20 (2)
-                      38210475
+                      38330557
                     </p>
                   </li>
                   <li>
@@ -62,7 +62,7 @@ class Footer extends Component {
               </h5>
               <ul style={{ textAlign: "left" }}>
                 <li>Centra</li>
-                <li>206 of 6th Extension Area</li>
+                <li>206 Ext. of sixth industrial area</li>
                 <li>6th Of October City, Giza</li>
                 <li>Egypt</li>
               </ul>
