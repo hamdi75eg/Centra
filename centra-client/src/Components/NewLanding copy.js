@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import M from "materialize-css";
 import Carousel from "./Carousel";
 import Contact from "./Email";
+import parallax1 from "../media/8.png";
+import parallax2 from "../media/16.jpg";
+import parallax3 from "../media/4.png";
 import image1 from "../media/Picture2.png";
 import image4 from "../media/Picture6.png";
 import image5 from "../media/Picture1.png";
@@ -53,7 +56,7 @@ class Parallax extends Component {
       <div className="">
         <div class="parallax-container">
           <div class="parallax">
-            <img src={"https://drive.google.com/uc?export=view&id=1OZ6ji9wWZE30Wth-eCdB6BRxkNFEKZvr"} />
+            <img src={parallax1} />
           </div>
         </div>
         <div class="section white">
@@ -63,7 +66,7 @@ class Parallax extends Component {
         </div>
         <div class="parallax-container">
           <div class="parallax">
-            <img src={"http://lorempixel.com/1690/1130/technics/2/"} />
+            <img src={parallax3} />
           </div>
         </div>
         <div class="section white">
@@ -77,7 +80,7 @@ class Parallax extends Component {
 
         <div class="parallax-container">
           <div class="parallax">
-            <img src={"http://lorempixel.com/1690/1130/technics/3/"} />
+            <img src={parallax2} />
           </div>
         </div>
         <div class="section white">

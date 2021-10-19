@@ -76,7 +76,7 @@ class Homepage extends Component {
           style={{
             backgroundImage: `url(${this.state.imageURL[1]})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundOrigin: "border-box",
           }}
         >

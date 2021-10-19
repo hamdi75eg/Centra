@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import M from "materialize-css";
-import logo from "../media/logo.png";
+import logo from "../media/logo.2c8dadd5.png";
 import catalouge from "../media/cata2021.pdf";
 import wallpaper from '../media/centra-2.jpg'
 class NavBar extends Component {
@@ -35,10 +35,13 @@ class NavBar extends Component {
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
-                <a disabled>Our Products</a>
+                <a disabled 
+                style={{ fontsize: "1.875em" }}>Our Products</a>
               </li>
               <li>
-                <a href={catalouge}>Download Catalouge</a>
+                <a
+                 style={{ fontsize: "1.875em" }}
+                 href={catalouge}>Download Catalouge</a>
               </li>
             </ul>
           </div>
