@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
 import M from "materialize-css";
 import rp from "request-promise";
+import catalouge from "../media/cata2021.pdf";
 
 class Homepage extends Component {
   state = {
@@ -40,7 +40,6 @@ class Homepage extends Component {
       })
       .catch((err) => {
         console.log(err);
-        M.toast({ html: err });
       });
 
     this.timeFrame(10000);
@@ -55,7 +54,8 @@ class Homepage extends Component {
   };
   render() {
     return (
-      <div class="carousel carousel-slider center" data-indicators="true">
+     <div>
+        <div class="carousel carousel-slider center" data-indicators="true" style={{border:"solid #0097a7 3px"}}>
         <div
           class="carousel-item white white-text"
           href="#one!"
@@ -109,7 +109,9 @@ class Homepage extends Component {
           <h2 class="black-text">Scrub Suit</h2>
         </div>
       </div>
-    );
+          <h6>To view all our products, check centra catalouge <a href={catalouge}> here</a> </h6>
+     </div>
+      );
   }
 }
 

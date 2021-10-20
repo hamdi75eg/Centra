@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import 'materialize-css'
 import './CSS/tweaks.css'
 import Body from './Components/Body' 

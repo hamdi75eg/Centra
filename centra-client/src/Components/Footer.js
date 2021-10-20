@@ -53,6 +53,7 @@ class Footer extends Component {
                       <i class="material-icons">email</i> info@centra-egypt.com
                     </p>
                   </li>
+                  <li><p><i href="#" class="fa fa-linkedin"></i> @centra.com</p></li>
                 </ul>
               </p>
             </div>

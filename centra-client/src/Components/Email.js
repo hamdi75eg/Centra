@@ -71,8 +71,8 @@ class About extends Component {
           var toastHTML = `<span ${css_valid}>We Will be in touch soon</span>`;
           M.toast({ html: toastHTML });
         } else {
-          var toastHTML = `<span ${css_error}>Error While Sending Email</span>`;
-          M.toast({ html: toastHTML });
+          var toastHTML2 = `<span ${css_error}>Error While Sending Email</span>`;
+          M.toast({ html: toastHTML2 });
         }
       })
       .catch((err) => {

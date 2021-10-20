@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
-import M from "materialize-css";
+import  "materialize-css";
 import newImage from "../media/21.jpg";
 
 class Homepage extends Component {
@@ -36,6 +35,8 @@ class Homepage extends Component {
                 src={newImage}
                 max width="100%"
                 height="auto"
+                alt="centra"
+                style={{borderRadius:"2%"}}
               ></img>
             </p>
           </div>
