@@ -66,12 +66,12 @@ class Parallax extends Component {
         <div class="section white">
           <div class="row container">
             <div className="row">
-              <h2>Our Prodcuts</h2>
+              <h2>Our Products</h2>
             </div>
             <Carousel />
             <h6 className="flow-text">
               To view all our products, check Centra{" "}
-              <a  href={catalouge}> Catalouge</a>{" "}
+              <a  href={catalouge}> Catalogue</a>{" "}
             </h6>
           </div>
         </div>

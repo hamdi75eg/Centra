@@ -10,7 +10,7 @@ class Homepage extends Component {
       "https://drive.google.com/uc?export=view&id=1WPxk6v0k0Zr8qiaqOuNlzMQHr3oFh6-h",
       "https://drive.google.com/uc?export=view&id=1KoT6ALwnzE3-9BjSikjUZAYOBmxZ1kAl",
       "https://drive.google.com/uc?export=view&id=1ZXkkXpmOSnKsUI9mxQG7m4RhWlW_VZNE",
-      "https://drive.google.com/uc?export=view&id=1KFly1e0gPDkXI4gGIU0zlGvWkZtCAKci"
+      "https://drive.google.com/uc?export=view&id=1KFly1e0gPDkXI4gGIU0zlGvWkZtCAKci",
     ],
     images: [],
     data: [],
@@ -61,7 +61,7 @@ class Homepage extends Component {
           <div
             class="carousel carousel-slider center"
             data-indicators="true"
-            style={{ border: "solid #0097a7 3px" }}
+            style={{ border: "solid #0097a7 0px" }}
           >
             <div
               class="carousel-item white white-text"
@@ -74,7 +74,14 @@ class Homepage extends Component {
                 backgroundClip: "content-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align ">Surgical Drapes and Packs</h3>
+              <div>
+                <h4
+                  class="flow-text white-text  center-align"
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)" }}
+                >
+                  Surgical Gowns and Drapes
+                </h4>
+              </div>
             </div>
 
             <div
@@ -87,7 +94,9 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">Scrub Suits</h3>
+              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+                Scrub Suits
+              </h3>
             </div>
 
             <div
@@ -100,7 +109,9 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">Facemasks and Overheads</h3>
+              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+                Facemasks and Overheads
+              </h3>
             </div>
 
             <div
@@ -113,7 +124,9 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">Protective Apparel</h3>
+              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+                Protective Apparel
+              </h3>
             </div>
             <div
               class="carousel-item blue white-text"
@@ -125,7 +138,9 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">Surgical Gowns</h3>
+              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+                Surgical Gowns
+              </h3>
             </div>
           </div>
         </div>

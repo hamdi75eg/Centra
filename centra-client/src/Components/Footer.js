@@ -3,7 +3,8 @@ import M from "materialize-css";
 import iso13485 from "../media/ISO-13485.jpg";
 import ce2 from "../media/CE 0123-1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Footer extends Component {
   componentDidMount() {
@@ -55,8 +56,20 @@ class Footer extends Component {
                     </p>
                   </li>
                   <li>
-                    <p>
-                      <i><FontAwesomeIcon icon={faCoffee} /> </i> i@centra.com
+                    <p style={{ paddingLeft: "3.5px" }}>
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        width="24px"
+                        height="24px"
+                        size="lg"
+                      />
+                      <a
+                        style={{ paddingLeft: "5px" }}
+                        className="white-text"
+                        href="https://www.linkedin.com/company/centraegypt"
+                      >
+                        @centraegypt
+                      </a>
                     </p>
                   </li>
                 </ul>
