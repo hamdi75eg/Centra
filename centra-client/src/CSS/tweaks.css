@@ -9,6 +9,22 @@
   margin: 3px;
 }
 
+.la{
+  padding: 15px;
+  font-size: 15px;
+  width: 50px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 600ms;
+  margin: 3px;
+}
+.la-linkedin {
+  background: none;
+  color: white;
+}
+
+
 .fa:hover {
   opacity: 1;
   background: #212121;

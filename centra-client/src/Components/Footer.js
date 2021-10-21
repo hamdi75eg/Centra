@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import M from "materialize-css";
 import iso13485 from "../media/ISO-13485.jpg";
 import ce2 from "../media/CE 0123-1.jpg";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 class Footer extends Component {
   componentDidMount() {
@@ -38,8 +39,8 @@ class Footer extends Component {
                   </li>
                   <li>
                     <p>
-                      <i class="material-icons">phone</i> +20 (2) 38330869 /
-                      +20 (2) 38330856
+                      <i class="material-icons">phone</i> +20 (2) 38330869 / +20
+                      (2) 38330856
                     </p>
                   </li>
                   <li>
@@ -53,7 +54,11 @@ class Footer extends Component {
                       <i class="material-icons">email</i> info@centra-egypt.com
                     </p>
                   </li>
-                  <li><p><i href="#" class="fa fa-linkedin"></i> @centra.com</p></li>
+                  <li>
+                    <p>
+                      <i><FontAwesomeIcon icon={faCoffee} /> </i> i@centra.com
+                    </p>
+                  </li>
                 </ul>
               </p>
             </div>

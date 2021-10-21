@@ -36,7 +36,7 @@ class NavBar extends Component {
             <ul class="right hide-on-med-and-down">
               <li>
                 <a disabled 
-                style={{ fontsize: "1.875em" }}>Our Products</a>
+                style={{ fontsize: "1.875em" , color:"#1a237e",transition:"none",pointerEvents:"none"}}>Our Products</a>
               </li>
               <li>
                 <a
@@ -71,7 +71,6 @@ class NavBar extends Component {
           </li>
           <li>
           <a style={{textAlign:"left"}}>
-          <i class="material-icons">shop</i><a href="#">Our Products</a>
           </a>
           </li>
           <li>

@@ -6,6 +6,7 @@ import parallax1 from "../media/8.png";
 import parallax2 from "../media/16.jpg";
 import parallax3 from "../media/4.png";
 import Row1 from "./Row1";
+import catalouge from "../media/cata2021.pdf";
 
 class Parallax extends Component {
   state = { width: -1, height: -1, slideIndex: 1, slides: [], dots: [] };
@@ -26,7 +27,7 @@ class Parallax extends Component {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".parallax");
       var instances = M.Parallax.init(elems, true);
-    }); 
+    });
     var result = this.getWindowDimension();
 
     this.setState({ width: result.width, height: result.height });
@@ -49,7 +50,7 @@ class Parallax extends Component {
       <div className="">
         <div class="parallax-container">
           <div class="parallax">
-            <img src={parallax1} alt="parallax1"/>
+            <img src={parallax1} alt="parallax1" />
           </div>
         </div>
         <div class="section white">
@@ -68,6 +69,10 @@ class Parallax extends Component {
               <h2>Our Prodcuts</h2>
             </div>
             <Carousel />
+            <h6 className="flow-text">
+              To view all our products, check Centra{" "}
+              <a  href={catalouge}> Catalouge</a>{" "}
+            </h6>
           </div>
         </div>
 

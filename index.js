@@ -85,6 +85,7 @@ app.post("/mail", (req, res) => {
   
           <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top:10px">Your inquiry being processed, we will
               be in contact soon!</p>
+          <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top:10px">In the meantime you can check out our <a href="https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip">catalouge</a></p>    
           <br />
           <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; margin:0px">Thanks in advance,</p>
           <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top:3px">Centra team</p>
@@ -97,20 +98,18 @@ app.post("/mail", (req, res) => {
       <div >
           <div >
               <h5  style="text-align:left; color: #1a237e ;">
-                  About:
+                  Contact Us:
               </h5>
               <p style="color: #212121;">
               <p style="text-align:left;">
-                  Phone: +20 (111)4888898
+                  Phone: +20 (111) 2911174
               </p>
   
               <p style="text-align:left;">
-                  Landline: +20 (2) 27429697 /
-                  27429698
+                  Landline: +20 (2) 38330869 / +20 (2) 38330856
               </p>
               <p style="text-align:left;">
-                  Fax: +20 (2)
-                  38210475
+                  Fax: +20 (2) 38330557
               </p>
               <p style="text-align:left;">
                   Email: info@centra-egypt.com
@@ -121,7 +120,7 @@ app.post("/mail", (req, res) => {
               <h5 style="text-align:left;color:#1a237e ">
                   Office Address:
               </h5>
-              <p>Centra, 206 of 6th Extension Area,6th Of October City, Giza, Egypt</p>
+              <p>Centra, 206 Ext. of sixth industrial area, 6th Of October City, Giza, Egypt</p>
           </div>
   
       </div>
