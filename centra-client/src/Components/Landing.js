@@ -7,6 +7,7 @@ import parallax2 from "../media/16.jpg";
 import parallax3 from "../media/4.png";
 import Row1 from "./Row1";
 import catalouge from "../media/cata2021.pdf";
+import PopUp from "./Popup"
 
 class Parallax extends Component {
   state = { width: -1, height: -1, slideIndex: 1, slides: [], dots: [] };
@@ -86,6 +87,7 @@ class Parallax extends Component {
             <Contact />
           </div>
         </div>
+        <PopUp/>
       </div>
     );
   }

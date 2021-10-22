@@ -49,8 +49,7 @@ class Homepage extends Component {
     const interval = setInterval(() => {
       var elem = document.querySelectorAll(".carousel")[0];
       var instance = M.Carousel.getInstance(elem);
-      //instance.next();
-      console.log(elem);
+      instance.next();
     }, timeout);
   };
   render() {

@@ -29,12 +29,12 @@ class NavBar extends Component {
             class="nav-wrapper indigo darken-4"
             style={{ paddingBottom: "20px" }}
           >
-            <a href="/" class="brand-logo">
+            <a href="/" class="brand-logo" style={{display:"block"}}>
               <img
                 src={logo}
-                width="220px"
-                height="55px"
-                style={{ marginLeft: "50px" }}
+                width="198px"
+                height="50px"
+                style={{ marginLeft: "20px",marginTop:"4px"}}
               />
             </a>
             <ul class="right hide-on-med-and-down">

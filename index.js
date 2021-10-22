@@ -5,7 +5,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const joi = require("joi");
 const moment = require("moment");
-const keys = require('./keys')
+const keys = require("./keys");
 
 app.use(express.static("centra-client/src/media"));
 
@@ -22,7 +22,6 @@ app.get("*", (req, res) => {
 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
-
 app.post("/mail", (req, res) => {
   const data = req.body;
 
@@ -33,8 +32,6 @@ app.post("/mail", (req, res) => {
   });
 
   const valid = schema.validate(data);
-
-  console.log(valid);
 
   if (valid.error) {
     return res.json({ error: valid.error.details[0].message });
@@ -122,12 +119,13 @@ app.post("/mail", (req, res) => {
     )}`,
   };
 
-  //console.log(mailOptions);
-
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       res.json({ error: error.message });
+      console.log(`Self Error: ` + error.message);
     } else {
+      console.log(`Self Email sent: ` + info.response);
+
       res.json({ succ: "Email sent: " + info.response });
       let transporter_centra = nodemailer.createTransport({
         name: "centra-egypt.com",
@@ -153,21 +151,17 @@ app.post("/mail", (req, res) => {
         ],
       };
 
-      console.log(mailOptions_centra);
-
       transporter_centra.sendMail(mailOptions_centra, function (error, info) {
         if (error) {
-          console.log("Error" + error.message);
+          console.log("Error: " + error.message);
         } else {
-          console.log("Email sent: " + info.response);
+          console.log(`Reply Email sent to: ${data.mail}  ` + info.response);
         }
       });
     }
   });
 });
 
-
-
 app.listen(process.env.PORT || 4000, () =>
-  console.log(`Example app listening on port 4000!`)
+  console.log(`App listening on port ${process.env.PORT || 4000}`)
 );
