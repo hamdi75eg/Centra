@@ -87,7 +87,7 @@ class About extends Component {
         <div class="row">
           <form class="col s12">
             <div className="row">
-              <h3> Get In Touch</h3>
+              <h3 style={{ margin: "1rem 0 1.4rem 0", textAlign: "center", color: "#1a237e"}}><b>GET IN TOUCH</b></h3>
             </div>
             <div class="row">
               <div class="input-field col s12 m6 l6 xl6">

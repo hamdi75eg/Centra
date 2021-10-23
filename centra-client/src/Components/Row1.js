@@ -12,10 +12,10 @@ class Homepage extends Component {
         <div className="row">
           <div className="col s12 m12 l12 xl12">
             <div>
-              <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "left" }}>
-                About Us
+              <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "center", color: "#1a237e"}}>
+               <b> ABOUT US</b>
               </h2>
-              <p class="flow-text" style={{ textAlign: "left" }}>
+              <p class="flow-text" style={{ textAlign: "center" }}>
                 Established in 2003, Centra is an independent, privately owned
                 company, specialized in manufacturing and supplying disposable
                 medical wearing apparel. Our production facility is equipped
@@ -24,7 +24,7 @@ class Homepage extends Component {
                 ever-changing requirements of the healthcare industry. The
                 ability to customize our range of disposable kits as per
                 customer's requirements has given us an edge over our
-                competitors in the respective main
+                competitors in the respective main.
               </p>
             </div>
           </div>

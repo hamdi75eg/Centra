@@ -76,7 +76,7 @@ class Homepage extends Component {
               <div>
                 <h4
                   class="flow-text white-text  center-align"
-                  style={{ backgroundColor: "rgba(97,97,97,0.5)" }}
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}
                 >
                   Surgical Gowns and Drapes
                 </h4>
@@ -93,9 +93,10 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+              <h4  class="flow-text white-text  center-align"
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}>
                 Scrub Suits
-              </h3>
+              </h4>
             </div>
 
             <div
@@ -108,9 +109,10 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+              <h4  class="flow-text white-text  center-align"
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}>
                 Facemasks and Overheads
-              </h3>
+              </h4>
             </div>
 
             <div
@@ -123,9 +125,10 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+              <h4  class="flow-text white-text  center-align"
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}>
                 Protective Apparel
-              </h3>
+              </h4>
             </div>
             <div
               class="carousel-item blue white-text"
@@ -137,9 +140,10 @@ class Homepage extends Component {
                 backgroundOrigin: "border-box",
               }}
             >
-              <h3 class="flow-text blue-grey-text text-lighten-4 center-align">
+              <h4  class="flow-text white-text  center-align"
+                  style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}>
                 Surgical Gowns
-              </h3>
+              </h4>
             </div>
           </div>
         </div>

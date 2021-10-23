@@ -114,8 +114,15 @@ class Footer extends Component {
         <div class="footer-copyright">
           <div class="container">
             © 2021 Centra For Medical Supplies
-            <a class="grey-text text-lighten-4 right" href="#">
-              Top of Page
+            <a 
+                        class="grey-text text-lighten-4 right" href="#">
+            <img class="tooltipped" data-position="top" data-tooltip="Back to top"
+             style={{ width: "30px",
+                        height: "30px",
+                        size:"lg"
+                        }}
+                      
+                        src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-up-arrow-alignment-and-tools-kiranshastry-gradient-kiranshastry.png"/>
             </a>
           </div>
         </div>

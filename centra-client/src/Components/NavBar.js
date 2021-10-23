@@ -52,7 +52,8 @@ class NavBar extends Component {
                 </a>
               </li>
               <li>
-                <a href={catalouge}>
+                <a class="tooltipped" data-position="left" data-tooltip="Press to download catalogue"
+                href={catalouge}>
                   
                   <FontAwesomeIcon
                     icon={faDownload}
