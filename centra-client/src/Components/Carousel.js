@@ -31,7 +31,7 @@ class Homepage extends Component {
     };
     rp(requestOptions)
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         if (data.error === undefined) {
           //All is good
           this.setState({ data: data });
@@ -40,7 +40,7 @@ class Homepage extends Component {
         }
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
       });
 
     this.timeFrame(10000);

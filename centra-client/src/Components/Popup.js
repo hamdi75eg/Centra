@@ -16,7 +16,7 @@ class Parallax extends Component {
 
       //Check Time Of Popup
       var time = moment()
-      console.log("day is",time.date() )
+      //console.log("day is",time.date() )
       //Change to 10 and 19 later
       if(time.month() === 9 && time.year() === 2021 && (time.date() <= 31)){
         setTimeout(() => { instance.open(); }, 5000); 
@@ -24,7 +24,7 @@ class Parallax extends Component {
       
     });
 
-    console.log(this.state.slideIndex);
+    //console.log(this.state.slideIndex);
   }
 
   render() {

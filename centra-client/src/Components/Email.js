@@ -15,7 +15,7 @@ class About extends Component {
     });
   }
   handleChange = (event) => {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     const { name, value } = event.target;
     this.setState({
       [name]: value,
@@ -25,7 +25,7 @@ class About extends Component {
 
   submit = () => {
     const data = this.state;
-    console.log(data);
+    //console.log(data);
     const schema = joi.object({
       mail: joi.string().email({ tlds: { allow: false } }), //change to 2 or 64 later
       text: joi.string().required(), //change to 64 later
@@ -48,13 +48,13 @@ class About extends Component {
       if (cause === "text") {
         toastHTML = `<span ${css_error}>Please Enter a Your Message</span>`;
       }
-      console.log(valid.error.details[0].path[0]);
+     // console.log(valid.error.details[0].path[0]);
       M.toast({ html: toastHTML });
       return;
     }
 
     const requestOptions = {
-      uri: "http://localhost:4000/mail",
+      uri: window.location.href + "mail",
       method: "POST",
       json: true,
       body: {
@@ -87,7 +87,15 @@ class About extends Component {
         <div class="row">
           <form class="col s12">
             <div className="row">
-              <h3 style={{ margin: "1rem 0 1.4rem 0", textAlign: "center", color: "#1a237e"}}><b>GET IN TOUCH</b></h3>
+              <h3
+                style={{
+                  margin: "1rem 0 1.4rem 0",
+                  textAlign: "center",
+                  color: "#1a237e",
+                }}
+              >
+                <b>GET IN TOUCH</b>
+              </h3>
             </div>
             <div class="row">
               <div class="input-field col s12 m6 l6 xl6">

@@ -22,7 +22,7 @@ class NavBar extends Component {
     return (
       <div>
         <nav>
-          <a href="#" data-target="slide-out" class="sidenav-trigger">
+          <a data-target="slide-out" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
           <div
@@ -53,7 +53,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <a class="tooltipped" data-position="left" data-tooltip="Press to download catalogue"
-                href={catalouge}>
+                href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"}>
                   
                   <FontAwesomeIcon
                     icon={faDownload}
@@ -75,21 +75,21 @@ class NavBar extends Component {
               <div class="background">
                 <img src={wallpaper} width="300px" height="150px" />
               </div>
-              <a href="#">
+              <a >
                 <img class="" alt="" />
               </a>
-              <a href="#">
+              <a>
                 <span class="white-text name"></span>
               </a>
-              <a href="#">
+              <a>
                 <span class="white-text email"></span>
               </a>
             </div>
           </li>
           <li>
-            <a href={catalouge} style={{ textAlign: "left" }}>
+            <a href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"} style={{ textAlign: "left" }}>
               <i class="material-icons">file_download</i>
-              <a href={catalouge}>Download Catalog</a>
+              <a href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"}>Download Catalog</a>
             </a>
           </li>
           <li>
@@ -102,7 +102,7 @@ class NavBar extends Component {
             <a class="subheader"></a>
           </li>
           <li>
-            <a class="waves-effect" href="#"></a>
+            <a class="waves-effect" ></a>
           </li>
         </ul>
       </div>

@@ -7,7 +7,7 @@ import parallax2 from "../media/9.png";
 import parallax3 from "../media/4.png";
 import Row1 from "./Row1";
 import catalouge from "../media/cata2021.pdf";
-import PopUp from "./Popup"
+import PopUp from "./Popup";
 
 class Parallax extends Component {
   state = { width: -1, height: -1, slideIndex: 1, slides: [], dots: [] };
@@ -42,7 +42,7 @@ class Parallax extends Component {
       });
     });
 
-    console.log(this.state.slideIndex);
+    //console.log(this.state.slideIndex);
   }
 
   render() {
@@ -67,12 +67,30 @@ class Parallax extends Component {
         <div class="section white">
           <div class="row container">
             <div className="row">
-              <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "center", color: "#1a237e"}}><b>OUR PRODUCTS</b></h2>
+              <h2
+                style={{
+                  margin: "1rem 0 1.4rem 0",
+                  textAlign: "center",
+                  color: "#1a237e",
+                }}
+              >
+                <b>OUR PRODUCTS</b>
+              </h2>
             </div>
             <Carousel />
             <h6 className="flow-text">
-              To view all our products, check {" "}
-              <a class="tooltipped" data-position="right" data-tooltip="Press to download catalogue" style={{ color: "#1a237e"}} href={catalouge}>Centra Catalogue.</a>{" "}
+              To view all our products, check{" "}
+              <a
+                class="tooltipped"
+                data-position="right"
+                data-tooltip="Press to download catalogue"
+                style={{ color: "#1a237e" }}
+                href={
+                  "https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"
+                }
+              >
+                Centra Catalogue.
+              </a>{" "}
             </h6>
           </div>
         </div>
@@ -87,7 +105,7 @@ class Parallax extends Component {
             <Contact />
           </div>
         </div>
-        <PopUp/>
+        <PopUp />
       </div>
     );
   }
