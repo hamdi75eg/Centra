@@ -43,7 +43,7 @@ class Homepage extends Component {
         //console.log(err);
       });
 
-    this.timeFrame(10000);
+    this.timeFrame(6000);
   }
   timeFrame = (timeout) => {
     const interval = setInterval(() => {
