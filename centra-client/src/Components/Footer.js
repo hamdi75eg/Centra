@@ -28,7 +28,7 @@ class Footer extends Component {
           <div class="row">
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-                Contact Us:
+               <b> CONTACT US</b>
               </h5>
               <p class="grey-text text-lighten-4">
                 <ul style={{ textAlign: "left" }}>
@@ -77,7 +77,7 @@ class Footer extends Component {
             </div>
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-                Office Address:
+                <b>ADDRESS</b>
               </h5>
               <ul style={{ textAlign: "left" }}>
                 <li>Centra</li>
@@ -88,7 +88,7 @@ class Footer extends Component {
             </div>
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-                Certfications
+               <b> CERTFICATIONS</b>
               </h5>
               <div style={{ textAlign: "left" }}>
                 <a href={ceProof}>
@@ -113,9 +113,8 @@ class Footer extends Component {
         </div>
         <div class="footer-copyright">
           <div class="container">
-            © 2021 Centra For Medical Supplies
-            <a 
-                        class="grey-text text-lighten-4 right" href="#">
+           <p style={{ textAlign: "left" }}> © 2021 Centra For Medical Supplies 
+            <a class="grey-text text-lighten-4 right" href="#">
             <img class="tooltipped" data-position="top" data-tooltip="Back to top"
              style={{ width: "30px",
                         height: "30px",
@@ -124,6 +123,7 @@ class Footer extends Component {
                       
                         src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-up-arrow-alignment-and-tools-kiranshastry-gradient-kiranshastry.png"/>
             </a>
+            </p>
           </div>
         </div>
       </footer>
