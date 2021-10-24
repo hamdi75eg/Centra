@@ -3,7 +3,7 @@ import M from "materialize-css";
 import Carousel from "./Carousel";
 import Contact from "./Email";
 import parallax1 from "../media/8.png";
-import parallax2 from "../media/16.jpg";
+import parallax2 from "../media/9.png";
 import parallax3 from "../media/4.png";
 import Row1 from "./Row1";
 import catalouge from "../media/cata2021.pdf";

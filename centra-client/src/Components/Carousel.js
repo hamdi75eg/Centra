@@ -7,10 +7,10 @@ class Homepage extends Component {
   state = {
     imageURL: [
       "https://drive.google.com/uc?export=view&id=1woAzqefFNKjRxMRl1vsvyh3fQzIBUj18",
-      "https://drive.google.com/uc?export=view&id=1WPxk6v0k0Zr8qiaqOuNlzMQHr3oFh6-h",
+      "https://drive.google.com/uc?export=view&id=15L4e7QIBXJa0vgIbtCl66Wmfbl6okUZm",
       "https://drive.google.com/uc?export=view&id=1KoT6ALwnzE3-9BjSikjUZAYOBmxZ1kAl",
       "https://drive.google.com/uc?export=view&id=1ZXkkXpmOSnKsUI9mxQG7m4RhWlW_VZNE",
-      "https://drive.google.com/uc?export=view&id=1KFly1e0gPDkXI4gGIU0zlGvWkZtCAKci",
+      "https://drive.google.com/uc?export=view&id=1ZPdBVMUkjrV4j-d7xpqwqAeqd_tbG9PV",
     ],
     images: [],
     data: [],

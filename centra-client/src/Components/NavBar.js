@@ -62,7 +62,7 @@ class NavBar extends Component {
                     style={{paddingRight:"3px"}}
                   />
                   {" "}
-                  Download Catalouge{" "}
+                  Download Catalogue{" "}
                 </a>
               </li>
             </ul>
@@ -89,7 +89,7 @@ class NavBar extends Component {
           <li>
             <a href={catalouge} style={{ textAlign: "left" }}>
               <i class="material-icons">file_download</i>
-              <a href={catalouge}>Download Catalouge</a>
+              <a href={catalouge}>Download Catalog</a>
             </a>
           </li>
           <li>
