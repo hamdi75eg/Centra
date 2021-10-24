@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Parallax from './Landing'
-import Email from './Email'
+import E404 from './Error'
 
 class Body extends Component {
-  render () {
+  render() {
     return (
-    <div>
-    
-    <Route  exact path='/' component={Parallax}/>
-    <Route  exact path='/mail' component={Email}/>
-    </div>
+      <div>
+
+        <Route exact path='/'>
+          <Parallax />
+        </Route>
+        <Route path="">
+          <E404 />
+        </Route>
+
+      </div>
     )
   }
 }

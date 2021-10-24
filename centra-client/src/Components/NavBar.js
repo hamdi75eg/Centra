@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import logo from "../media/logo.2c8dadd5.png";
-import catalouge from "../media/cata2021.pdf";
+import catalouge from "../media/CATALOG CENTRA.pdf";
 import wallpaper from "../media/centra-2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

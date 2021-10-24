@@ -78,7 +78,7 @@ class Homepage extends Component {
                   class="flow-text white-text  center-align"
                   style={{ backgroundColor: "rgba(97,97,97,0.5)", padding: "5px" }}
                 >
-                  Surgical Gowns and Drapes
+                  Surgical Packs and Drapes
                 </h4>
               </div>
             </div>

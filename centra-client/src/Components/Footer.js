@@ -26,9 +26,9 @@ class Footer extends Component {
       <footer class="page-footer indigo darken-4">
         <div class="container">
           <div class="row">
-            <div class="col s12 m12 l4 xl4">
+            <div class="col s12 m6 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-               <b> CONTACT US</b>
+               CONTACT US
               </h5>
               <p class="grey-text text-lighten-4">
                 <ul style={{ textAlign: "left" }}>
@@ -75,9 +75,9 @@ class Footer extends Component {
                 </ul>
               </p>
             </div>
-            <div class="col s12 m12 l4 xl4">
+            <div class="col s12 m6 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-                <b>ADDRESS</b>
+                ADDRESS
               </h5>
               <ul style={{ textAlign: "left" }}>
                 <li>Centra</li>
@@ -88,7 +88,7 @@ class Footer extends Component {
             </div>
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-               <b> CERTFICATIONS</b>
+               CERTFICATIONS
               </h5>
               <div style={{ textAlign: "left" }}>
                 <a href={ceProof}>
