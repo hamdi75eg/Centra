@@ -139,7 +139,7 @@ app.post("/mail", (req, res) => {
       });
       var mailOptions_centra = {
         from: keys.centra_mail,
-        to: data.mail,
+        to: data.mail, 
         subject: `Thanks For Reaching Out!`,
         html: email_html,
         attachments: [
