@@ -54,7 +54,7 @@ class About extends Component {
     }
 
     const requestOptions = {
-      uri: window.location.href + "mail",
+      uri: window.location.origin + "/mail",
       method: "POST",
       json: true,
       body: {
@@ -138,7 +138,7 @@ class About extends Component {
               </div>
             </div>
             <div className="row">
-              <a class="btn-large cyan darken-2" onClick={this.submit}>
+              <a class="btn-large cyan darken-2" onClick={this.submit} href={() => false}>
                 <i class="material-icons right">send</i>Send
               </a>
             </div>

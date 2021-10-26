@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import logo from "../media/logo.2c8dadd5.png";
-import catalouge from "../media/cata2021.pdf";
+//import catalouge from "../media/cata2021.pdf";
 import wallpaper from "../media/centra-2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,30 +11,31 @@ class NavBar extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".dropdown-trigger");
-      var instances = M.Dropdown.init(elems, true);
+      M.Dropdown.init(elems, true);
     });
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".sidenav");
-      var instances = M.Sidenav.init(elems, true);
+      M.Sidenav.init(elems, true);
     });
   }
   render() {
     return (
       <div>
         <nav>
-          <a data-target="slide-out" class="sidenav-trigger">
+          <a data-target="slide-out" class="sidenav-trigger" href="!#">
             <i class="material-icons">menu</i>
           </a>
           <div
             class="nav-wrapper indigo darken-4"
             style={{ paddingBottom: "20px" }}
           >
-            <a href="/" class="brand-logo" style={{display:"block"}}>
+            <a href="/" class="brand-logo" style={{ display: "block" }}>
               <img
+                alt="logo"
                 src={logo}
                 width="198px"
                 height="50px"
-                style={{ marginLeft: "20px",marginTop:"4px"}}
+                style={{ marginLeft: "20px", marginTop: "4px" }}
               />
             </a>
             <ul class="right hide-on-med-and-down">
@@ -47,21 +48,26 @@ class NavBar extends Component {
                     transition: "none",
                     pointerEvents: "none",
                   }}
+                  href="!#"
                 >
                   Our Products
                 </a>
               </li>
               <li>
-                <a class="tooltipped" data-position="left" data-tooltip="Press to download catalogue"
-                href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"}>
-                  
+                <a
+                  class="tooltipped"
+                  data-position="left"
+                  data-tooltip="Press to download catalogue"
+                  href={
+                    "https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"
+                  }
+                >
                   <FontAwesomeIcon
                     icon={faDownload}
                     width="28px"
                     height="28px"
-                    style={{paddingRight:"3px"}}
-                  />
-                  {" "}
+                    style={{ paddingRight: "3px" }}
+                  />{" "}
                   Download Catalogue{" "}
                 </a>
               </li>
@@ -73,36 +79,45 @@ class NavBar extends Component {
           <li>
             <div class="user-view">
               <div class="background">
-                <img src={wallpaper} width="300px" height="150px" />
+                <img alt="wallpeper" src={wallpaper} width="300px" height="150px" />
               </div>
-              <a >
+              <p>
                 <img class="" alt="" />
-              </a>
-              <a>
+              </p>
+              <p>
                 <span class="white-text name"></span>
-              </a>
-              <a>
+              </p>
+              <p>
                 <span class="white-text email"></span>
-              </a>
+              </p>
             </div>
           </li>
           <li>
-            <a href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"} style={{ textAlign: "left" }}>
+            <a
+              href={
+                "https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"
+              }
+              style={{ textAlign: "left" }}
+            >
               <i class="material-icons">file_download</i>
-              <a href={"https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"}>Download Catalog</a>
+              <a
+                href={
+                  "https://drive.google.com/uc?export=view&id=15TUOZ8fjyTEGSEhmalWyoAkkOhsn2Dip"
+                }
+              >
+                Download Catalog
+              </a>
             </a>
           </li>
           <li>
-            <a style={{ textAlign: "left" }}></a>
+            <p style={{ textAlign: "left" }}></p>
+          </li>
+          
+          <li>
+            <p disabled class="subheader"></p>
           </li>
           <li>
-            <div class="divider"></div>
-          </li>
-          <li>
-            <a class="subheader"></a>
-          </li>
-          <li>
-            <a class="waves-effect" ></a>
+            <p disabled class="waves-effect" ></p>
           </li>
         </ul>
       </div>

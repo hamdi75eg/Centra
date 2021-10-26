@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import rp from "request-promise";
-import catalouge from "../media/cata2021.pdf";
+//import catalouge from "../media/cata2021.pdf";
 
 class Homepage extends Component {
   state = {
@@ -19,7 +19,7 @@ class Homepage extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".carousel");
-      var instances = M.Carousel.init(elems, {
+      M.Carousel.init(elems, {
         fullWidth: true,
         indicators: true,
       });
@@ -46,7 +46,7 @@ class Homepage extends Component {
     this.timeFrame(6000);
   }
   timeFrame = (timeout) => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       var elem = document.querySelectorAll(".carousel")[0];
       var instance = M.Carousel.getInstance(elem);
       instance.next();
@@ -62,7 +62,7 @@ class Homepage extends Component {
             data-indicators="true"
             style={{ border: "solid #0097a7 0px" }}
           >
-            <div onLoad={'callbackAfterImageIsDownloaded'}
+            <div 
               class="carousel-item white white-text"
               href="#one!"
               style={{
@@ -83,7 +83,7 @@ class Homepage extends Component {
               </div>
             </div>
 
-            <div onLoad={'callbackAfterImageIsDownloaded'}
+            <div 
               class="carousel-item white white-text"
               href="#two!"
               style={{
@@ -99,7 +99,7 @@ class Homepage extends Component {
               </h4>
             </div>
 
-            <div onLoad={'callbackAfterImageIsDownloaded'}
+            <div
               class="carousel-item white white-text"
               href="#three!"
               style={{
@@ -115,7 +115,7 @@ class Homepage extends Component {
               </h4>
             </div>
 
-            <div onLoad={'callbackAfterImageIsDownloaded'}
+            <div
               class="carousel-item blue white-text"
               href="#four!"
               style={{
@@ -130,9 +130,9 @@ class Homepage extends Component {
                 Protective Apparel
               </h4>
             </div>
-            <div onLoad={'callbackAfterImageIsDownloaded'}
+            <div 
               class="carousel-item blue white-text"
-              href="#four!"
+              href="#five!"
               style={{
                 backgroundImage: `url(${this.state.imageURL[4]})`,
                 backgroundRepeat: "no-repeat",

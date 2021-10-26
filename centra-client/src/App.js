@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom'; import 'materialize-css'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'; import 'materialize-css'
 import './CSS/tweaks.css'
 import Footer from './Components/Footer'
 import NavBar from './Components/NavBar'

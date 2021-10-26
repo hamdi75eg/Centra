@@ -6,7 +6,6 @@ import parallax1 from "../media/8.jpg";
 import parallax2 from "../media/9.jpg";
 import parallax3 from "../media/4.jpg";
 import Row1 from "./Row1";
-import catalouge from "../media/cata2021.pdf";
 import PopUp from "./Popup";
 
 class Parallax extends Component {
@@ -27,7 +26,7 @@ class Parallax extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".parallax");
-      var instances = M.Parallax.init(elems, true);
+      M.Parallax.init(elems, true);
     });
     var result = this.getWindowDimension();
 
@@ -35,8 +34,8 @@ class Parallax extends Component {
 
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".collapsible");
-      var instances = M.Collapsible.init(elems, true);
-      var instance_ = M.Carousel.init({
+      M.Collapsible.init(elems, true);
+      M.Carousel.init({
         fullWidth: true,
         indicators: true,
       });

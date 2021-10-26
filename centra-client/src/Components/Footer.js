@@ -3,14 +3,14 @@ import M from "materialize-css";
 import iso13485 from "../media/ISO-13485.jpg";
 import ce2 from "../media/CE 0123-1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Footer extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".tooltipped");
-      var instances = M.Tooltip.init(elems, {
+      M.Tooltip.init(elems, {
         inDuration: 50,
         exitDelay: 50,
       });
@@ -28,7 +28,7 @@ class Footer extends Component {
           <div class="row">
             <div class="col s12 m6 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-               CONTACT US
+                CONTACT US
               </h5>
               <p class="grey-text text-lighten-4">
                 <ul style={{ textAlign: "left" }}>
@@ -88,11 +88,12 @@ class Footer extends Component {
             </div>
             <div class="col s12 m12 l4 xl4">
               <h5 class="white-text" style={{ textAlign: "left" }}>
-               CERTFICATIONS
+                CERTFICATIONS
               </h5>
               <div style={{ textAlign: "left" }}>
                 <a href={ceProof}>
                   <img
+                    alt="ce"
                     src={ce2}
                     class="certficates tooltipped"
                     data-tooltip="CE 0123"
@@ -101,6 +102,7 @@ class Footer extends Component {
                 </a>
                 <a href={isoProof}>
                   <img
+                    alt="iso"
                     src={iso13485}
                     class="certficates tooltipped"
                     data-tooltip="ISO 13485"
@@ -113,16 +115,13 @@ class Footer extends Component {
         </div>
         <div class="footer-copyright">
           <div class="container">
-           <p style={{ textAlign: "left" }}> © 2021 Centra For Medical Supplies 
-            <a class="grey-text text-lighten-4 right" href="#">
-            <img class="tooltipped" data-position="top" data-tooltip="Back to top"
-             style={{ width: "30px",
-                        height: "30px",
-                        size:"lg"
-                        }}
-                      
-                        src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-up-arrow-alignment-and-tools-kiranshastry-gradient-kiranshastry.png"/>
-            </a>
+            <p style={{ textAlign: "left" }}>
+              {" "}
+              © 2021 Centra For Medical Supplies
+              
+              <a class="grey-text text-lighten-4 right" href="/#">
+                <i className="material-icons">vertical_align_top</i>
+              </a>
             </p>
           </div>
         </div>

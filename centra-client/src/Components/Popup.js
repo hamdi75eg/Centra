@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import M from "materialize-css";
 import moment from "moment";
@@ -8,7 +9,7 @@ class Parallax extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".modal");
-      var instances = M.Modal.init(elems, {
+      M.Modal.init(elems, {
         inDuration: 150,
         outDuration: 150,
         preventScrolling: true,
@@ -46,7 +47,7 @@ class Parallax extends Component {
             />
           </div>
           <div class="modal-footer center">
-            <a class="modal-close waves-effect waves-green btn-flat">Dismiss</a>
+            <button class="modal-close waves-effect waves-green btn-flat">Dismiss</button>
           </div>
         </div>
       </div>

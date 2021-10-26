@@ -1,19 +1,23 @@
-  import React, { Component } from "react";
-import  "materialize-css";
-import newImage from "../media/21.jpg";
+import React, { Component } from "react";
+import "materialize-css";
+//import newImage from "../media/21.jpg";
 
 class Homepage extends Component {
-  componentDidMount() {
-    
-  }
+  componentDidMount() {}
   render() {
     return (
       <div>
         <div className="row">
           <div className="col s12 m12 l12 xl12">
             <div>
-              <h2 style={{ margin: "1rem 0 1.4rem 0", textAlign: "center", color: "#1a237e"}}>
-               <b> ABOUT US</b>
+              <h2
+                style={{
+                  margin: "1rem 0 1.4rem 0",
+                  textAlign: "center",
+                  color: "#1a237e",
+                }}
+              >
+                <b> ABOUT US</b>
               </h2>
               <p class="flow-text" style={{ textAlign: "center" }}>
                 Established in 2003, Centra is an independent, privately owned
@@ -28,8 +32,7 @@ class Homepage extends Component {
               </p>
             </div>
           </div>
-        {
-           /* `<div className="col s12 m12 l6 xl6">
+          {/* `<div className="col s12 m12 l6 xl6">
             <p className="Img_Home gradient-border">
               <img
                 style={{ display: "inline-flex" }}
@@ -40,9 +43,8 @@ class Homepage extends Component {
                 style={{borderRadius:"2%"}}
               ></img>
             </p>
-          </div>`*/
-        
-        }</div>
+          </div>`*/}
+        </div>
       </div>
     );
   }

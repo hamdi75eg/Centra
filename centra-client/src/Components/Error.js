@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import M from "materialize-css";
-import moment from "moment";
+import "materialize-css";
 
 class Matilda extends Component {
   state = { width: -1, height: -1, slideIndex: 1, slides: [], dots: [] };
 
 
-
+ 
   render() {
     //Desktop Version
     return (
