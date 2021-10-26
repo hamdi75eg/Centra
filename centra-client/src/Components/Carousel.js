@@ -6,11 +6,11 @@ import rp from "request-promise";
 class Homepage extends Component {
   state = {
     imageURL: [
-      "https://drive.google.com/uc?export=view&id=1FacpH-G9hRguZDtrPVd0O1KupULjqjhE",
-      "https://drive.google.com/uc?export=view&id=1-MytpJksmn4PxtFrmH3I1r0l1LRwcldJ",
-      "https://drive.google.com/uc?export=view&id=1UKZBkrnh6oKbSwAAtXH8triEbjvsCLBe",
-      "https://drive.google.com/uc?export=view&id=1GlrbEj8d2LnnZ23OrMzCOVqUjYBvzU2H",
-      "https://drive.google.com/uc?export=view&id=1L1mudQiuvkyln6NUHzG2p4l2iBul9-G5",
+      "https://drive.google.com/uc?export=view&id=1StwC84CH_FhHCvF3GBc-ezgpH-0587bV",
+      "https://drive.google.com/uc?export=view&id=1sOX_SAh0R5Dg0v8uAPwBIzf7KqQ2fT9v",
+      "https://drive.google.com/uc?export=view&id=1KfijLTutmR41bSmrSKkeALuc1BRF5beI",
+      "https://drive.google.com/uc?export=view&id=10XnBBwkuoz-iy8ovTWHFqLwHf8MnnYYg",
+      "https://drive.google.com/uc?export=view&id=11G1i8A94oJ1UeJImK0-xKiqV6-Svad0M",
     ],
     images: [],
     data: [],
