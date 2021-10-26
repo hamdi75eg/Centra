@@ -6,11 +6,11 @@ import catalouge from "../media/cata2021.pdf";
 class Homepage extends Component {
   state = {
     imageURL: [
-      "https://drive.google.com/uc?export=view&id=1woAzqefFNKjRxMRl1vsvyh3fQzIBUj18",
-      "https://drive.google.com/uc?export=view&id=15L4e7QIBXJa0vgIbtCl66Wmfbl6okUZm",
-      "https://drive.google.com/uc?export=view&id=1KoT6ALwnzE3-9BjSikjUZAYOBmxZ1kAl",
-      "https://drive.google.com/uc?export=view&id=1ZXkkXpmOSnKsUI9mxQG7m4RhWlW_VZNE",
-      "https://drive.google.com/uc?export=view&id=1ZPdBVMUkjrV4j-d7xpqwqAeqd_tbG9PV",
+      "https://drive.google.com/uc?export=view&id=1FacpH-G9hRguZDtrPVd0O1KupULjqjhE",
+      "https://drive.google.com/uc?export=view&id=1-MytpJksmn4PxtFrmH3I1r0l1LRwcldJ",
+      "https://drive.google.com/uc?export=view&id=1UKZBkrnh6oKbSwAAtXH8triEbjvsCLBe",
+      "https://drive.google.com/uc?export=view&id=1GlrbEj8d2LnnZ23OrMzCOVqUjYBvzU2H",
+      "https://drive.google.com/uc?export=view&id=1L1mudQiuvkyln6NUHzG2p4l2iBul9-G5",
     ],
     images: [],
     data: [],
@@ -62,7 +62,7 @@ class Homepage extends Component {
             data-indicators="true"
             style={{ border: "solid #0097a7 0px" }}
           >
-            <div
+            <div onLoad={'callbackAfterImageIsDownloaded'}
               class="carousel-item white white-text"
               href="#one!"
               style={{
@@ -83,7 +83,7 @@ class Homepage extends Component {
               </div>
             </div>
 
-            <div
+            <div onLoad={'callbackAfterImageIsDownloaded'}
               class="carousel-item white white-text"
               href="#two!"
               style={{
@@ -99,7 +99,7 @@ class Homepage extends Component {
               </h4>
             </div>
 
-            <div
+            <div onLoad={'callbackAfterImageIsDownloaded'}
               class="carousel-item white white-text"
               href="#three!"
               style={{
@@ -115,7 +115,7 @@ class Homepage extends Component {
               </h4>
             </div>
 
-            <div
+            <div onLoad={'callbackAfterImageIsDownloaded'}
               class="carousel-item blue white-text"
               href="#four!"
               style={{
@@ -130,7 +130,7 @@ class Homepage extends Component {
                 Protective Apparel
               </h4>
             </div>
-            <div
+            <div onLoad={'callbackAfterImageIsDownloaded'}
               class="carousel-item blue white-text"
               href="#four!"
               style={{
