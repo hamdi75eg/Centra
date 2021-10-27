@@ -38,7 +38,7 @@ class Parallax extends Component {
   render() {
     //Desktop Version
     return (
-      <div className="" >
+      <div className="">
         <div id="modal1" class="modal" style={{ overflow: "hidden" }}>
           <div class="modal-header right" style={{ marginRight: "3%" }}>
             <p>
@@ -48,7 +48,9 @@ class Parallax extends Component {
           <div class="modal-content">
             <img
               style={{ display: "contain" }}
-              src={"https://picsum.photos/800/550"}
+              src={
+                "https://drive.google.com/uc?export=view&id=1YtkYhB2OPH7Y8jVOxOB4-pX4Q0Rg3y-g"
+              }
               alt="parallax1"
               width="90%"
               height="auto"
