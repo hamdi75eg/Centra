@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import M from "materialize-css";
 import moment from "moment";
@@ -13,6 +12,8 @@ class Parallax extends Component {
         inDuration: 150,
         outDuration: 150,
         preventScrolling: true,
+        startingTop: "7%",
+        endingTop: "20%",
       });
       var instance = M.Modal.getInstance(elems[0]);
 
@@ -20,10 +21,14 @@ class Parallax extends Component {
       var time = moment();
       //console.log("day is",time.date() )
       //Change to 10 and 19 later
-      if (time.month() === 9 && time.year() === 2021 && time.date() <= 31) {
+      if (
+        (time.month() === 9 || time.month() === 10) &&
+        time.year() === 2021 &&
+        time.date() <= 31
+      ) {
         setTimeout(() => {
           instance.open();
-        }, 5000);
+        }, 7000);
       }
     });
 
@@ -33,21 +38,21 @@ class Parallax extends Component {
   render() {
     //Desktop Version
     return (
-      <div className="">
-        <div id="modal1" class="modal">
+      <div className="" >
+        <div id="modal1" class="modal" style={{ overflow: "hidden" }}>
+          <div class="modal-header right" style={{ marginRight: "3%" }}>
+            <p>
+              <i class="material-icons modal-close">close</i>
+            </p>
+          </div>
           <div class="modal-content">
             <img
               style={{ display: "contain" }}
-              src={
-                "https://drive.google.com/uc?export=view&id=1ppByp1WPgJwSrXHqIN5nMiuHAp0ReoET"
-              }
+              src={"https://picsum.photos/800/550"}
               alt="parallax1"
-              width="100%"
+              width="90%"
               height="auto"
             />
-          </div>
-          <div class="modal-footer center">
-            <button class="modal-close waves-effect waves-green btn-flat">Dismiss</button>
           </div>
         </div>
       </div>
