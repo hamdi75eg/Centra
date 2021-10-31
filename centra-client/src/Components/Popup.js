@@ -51,7 +51,7 @@ class Parallax extends Component {
               src={
                 "https://drive.google.com/uc?export=view&id=1YtkYhB2OPH7Y8jVOxOB4-pX4Q0Rg3y-g"
               }
-              alt="parallax1"
+              alt="Modal Content"
               width="90%"
               height="auto"
             />
